@@ -1,6 +1,5 @@
 # lyrililycogs
- cogs
- This cog is made for the Lyrical Lily character cords. Support is not provided for the installation of this cog. 
+This cog is made for the Lyrical Lily character cords. Support is not provided for the installation of this cog. 
 
 # Installation
 Do ```[p]repo add LyriLilyCogs https://github.com/JeffJrShim/LyriLilyCogs``` and do ```[p]cog install LyriLilyCogs lyrililycogs``` Where [p] = your prefix
