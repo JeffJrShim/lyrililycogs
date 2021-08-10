@@ -32,7 +32,6 @@ class LyriLilyCogs(commands.Cog):
         embed.set_author(name="MIYU'S HEAVENLY FANCLUB Rules and Regulations")
         await ctx.send(embed=embed)
 
-
     @miyu.group(invoke_without_command="True")
     async def rule3(self,ctx):
         """Rule 3 of MIYU'S HEAVENLY FANCLUB"""
@@ -64,6 +63,6 @@ class LyriLilyCogs(commands.Cog):
     @miyu.group(invoke_without_command="True")
     async def rule7(self,ctx):
         """Rule 7 of MIYU'S HEAVENLY FANCLUB"""
-        embed=discord.Embed(title="5. Keep anime and game spoilers in the right channel.", description="Be mindful for those that just got into the franchise and is starting to watch the anime (D4DJ: First Mix/D4DJ: Petit Mix) or reading the game stories in Groovy Mix. Put potential spoilers as a spoiler tag `||like this||` and keep them in <#817421163738300497>.",color=0xffcef2)
+        embed=discord.Embed(title="7. Keep anime and game spoilers in the right channel.", description="Be mindful for those that just got into the franchise and is starting to watch the anime (D4DJ: First Mix/D4DJ: Petit Mix) or reading the game stories in Groovy Mix. Put potential spoilers as a spoiler tag `||like this||` and keep them in <#817421163738300497>.",color=0xffcef2)
         embed.set_author(name="MIYU'S HEAVENLY FANCLUB Rules and Regulations")
         await ctx.send(embed=embed)
