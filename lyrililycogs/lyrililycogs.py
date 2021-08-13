@@ -70,7 +70,7 @@ class LyriLilyCogs(commands.Cog):
     @miyu.group(invoke_without_command="True")
     async def rule8(self,ctx):
         """Rule 8 of MIYU'S HEAVENLY FANCLUB"""
-        embed=discord.Embed(title="8. Upload appropriate links and domains here.", description="We won't accept links that are suspicious, or even worse, those that grab your IP address. We also want users to be safe. \n The only domains that are accepted are "youtube.com", "facebook.com", "twitter.com", "discord.com", and the like.",color=0xffcef2)
+        embed=discord.Embed(title="8. Upload appropriate links and domains here.", description="We won't accept links that are suspicious, or even worse, those that grab your IP address. We also want users to be safe. \n The only domains that are accepted are 'youtube.com', 'facebook.com', 'twitter.com', 'discord.com', and the like.",color=0xffcef2)
         embed.set_author(name="MIYU'S HEAVENLY FANCLUB Rules and Regulations")
         await ctx.send(embed=embed)
     
