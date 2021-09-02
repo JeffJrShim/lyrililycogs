@@ -101,3 +101,13 @@ class LyriLilyCogs(commands.Cog):
         embed=discord.Embed(title="12. Always remember to use your common sense.", description="It doesn't mean that something isn't listed down here you can do it. Remember, these are rule but you also need to treat them as guidelines! This is to make the fanclub peaceful and friendly. <:MiyuBliss:872056834821861386>",color=0xffcef2)
         embed.set_author(name="MIYU'S HEAVENLY FANCLUB Rules and Regulations")
         await ctx.send(embed=embed)
+        
+    @miyu.group(invoke_without_command="True")
+    async def punishmentcounter(self,ctx):
+        """Punishment Counter"""
+        embed=discord.Embed(title="The Punishment Counter", description="This shows the sequence of warnings every time a user breaks a rule. Note that Rule 4 bypasses the counter since an instant permban will be given to those that send any yabai Miyu art (as said in the same rule). There are 3 warning sets, shown below.")
+        embed.add_field(name="First Set of Warnings", value="Here, you'll be given your first warn when you violated a rule. You have three warnings here, and once all warnings are used up, you'll be muted for 24 hours or 1 day.\n\nThe pattern used for this set is as follows: \n[Warning 1 → Warning 2 → Warning 3 → __Mute__]", inline=False)
+        embed.add_field(name="Second Set of Warnings", value="After your 1 day mute and you still do some violations, this set will come to play. This time, you only have 2 warnings before the main punishment. That is, a temporary ban for 1 week or 7 days. \n\n The pattern used for this set is as follows:\n [Warning 1 → Warning 2 → __Temporary Ban__]", inline=True)
+        embed.add_field(name="Final Set of Warnings", value=" You should really know what you did that time when you got a temporary ban. But if you still do another violation, you'll only be given one last warning. And one last violation will make you permanently banned from the server. Yes, Miyu is mad and disappointed at you for doing a lot of violations in the server. \n\nThe pattern used for this set is as follows: \n[Warning → __**Permanent Ban**__]", inline=False)
+        embed.add_field(name="Note: ", value="To prevent this from happening, it is advised to read the rules more frequently to refresh your mind. Also, if you don't know that the action you're planning to do can violate the rules or not, you can ask the moderators. We're happy to help you~!", inline=True)
+        await ctx.send(embed=embed)
